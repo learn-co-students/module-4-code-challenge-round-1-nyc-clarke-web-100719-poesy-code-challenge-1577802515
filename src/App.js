@@ -69,8 +69,8 @@ class App extends React.Component {
           <UserHeader userLogin={this.state.userLogin}/>
           <NewPoemForm handleSubmit={this.handleSubmitNewPoem}/>
         </div>
-        <PoemsContainer poems={this.state.poems}/>
-        {/*<PoemsContainer likedPoems={this.state.likedPoems}/>*/}
+        <PoemsContainer poems={this.state.poems} handleClick={this.handleClickLikedPoems}/>
+        <PoemsContainer poems={this.state.likedPoems}/>
       </div>
     ); 
   }

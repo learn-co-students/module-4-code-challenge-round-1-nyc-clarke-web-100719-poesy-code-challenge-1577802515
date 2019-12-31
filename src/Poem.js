@@ -13,8 +13,11 @@ class Poem extends React.Component {
            onClick={() => {
                this.setState(prevState => ({
                    colorToggle: !prevState.colorToggle})
-               )}
-           }>
+               );
+
+               this.props.handleClickLikedPoems(this.props.poem);
+           }}>
+          
         <h3>{title}</h3>
         <p>{content}</p>
         <strong>- {author}</strong>
