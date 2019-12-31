@@ -2,11 +2,16 @@ import React from 'react';
 
 class Poem extends React.Component {
   render(){
+    
     return (
-      <div style={{color: "black"}}>
-        <h3>Title</h3>
-        <p>Content</p>
-        <strong>- By Author</strong>
+      
+      <div >
+      <div onClick={this.props.handleRead} style={{color: this.props.read ? "black" : "white"}}>
+        <h3>{this.props.poeem.title}</h3>
+     <p>{this.props.poeem.content}</p>
+    <strong>{this.props.poeem.author}</strong>
+      </div>
+
       </div>
     ); 
   }
