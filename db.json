@@ -35,6 +35,18 @@
       "content": "asdf",
       "author": "asdf",
       "id": 6
+    },
+    {
+      "title": "test",
+      "content": "testing my masterpiece",
+      "author": "asdf",
+      "id": 7
+    },
+    {
+      "title": "testing",
+      "content": "testing my masterpiece again",
+      "author": "asdf",
+      "id": 8
     }
   ]
 }

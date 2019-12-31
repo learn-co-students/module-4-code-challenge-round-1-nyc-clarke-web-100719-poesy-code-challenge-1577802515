@@ -51,6 +51,9 @@ class App extends React.Component {
           author: this.state.user
         })
       })
+      alert("Poem successfully created")
+    } else {
+      alert("You are not logged in. Poem has not been saved")
     }
   }
 
